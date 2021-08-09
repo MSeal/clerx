@@ -1,10 +1,7 @@
-% two items in a 3 tick window
-
-[styles]
-frame_width = 100
+% rate limit of two items within three seconds
 
 abcdef--g-|
 
-> rateLimiter(2, 3)
+> rateLimiter(2, 3000)
 
 ab-cd-ef-g--|

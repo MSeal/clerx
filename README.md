@@ -19,29 +19,29 @@ stop deferring if the wait time goes past `timeoutDue`.
 
 #### Examples
 
-**Only two events within three ticks**
+**Only two events within three seconds**
 
 ```
 abcdef--g-|
 
-> rateLimiter(2, 3)
+> rateLimiter(2, 3000)
 
 ab-cd-ef-g--|
 ```
 
-![image](https://user-images.githubusercontent.com/836375/128752990-58a17486-65ce-40af-8145-f0d05ac9ddb9.png)
+![image](https://user-images.githubusercontent.com/836375/128753802-0d51aba5-1657-49c8-85d7-07c8e5957af8.png)
 
-**Only one event within five ticks**
+**Only one event within five seconds**
 
 ```
 -(abc)def
 
-> rateLimiter(1, 5)
+> rateLimiter(1, 5000)
 
 -a----b----c----d----e----f----
 ```
 
-![image](https://user-images.githubusercontent.com/836375/128751509-fc2601f9-f313-4c75-bd50-0f3b4c93fa24.png)
+![image](https://user-images.githubusercontent.com/836375/128753824-c10c7ce8-ecaf-462e-83af-72b1c8dcc91d.png)
 
 ## Observables
 

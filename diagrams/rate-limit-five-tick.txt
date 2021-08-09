@@ -1,8 +1,7 @@
-% rate limit
-% only one item allowed in a five tick window
+% rate limit of one item within five seconds
 
 -(abc)def
 
-> rateLimiter(1, 5)
+> rateLimiter(1, 5000)
 
 -a----b----c----d----e----f----
