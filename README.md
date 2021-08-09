@@ -29,7 +29,7 @@ abcdef--g---
 ab-cd-ef-g--
 ```
 
-![image](https://user-images.githubusercontent.com/836375/128755519-03754982-7b25-4057-9ab6-4030ecace685.png)
+![rate-limiter](https://user-images.githubusercontent.com/836375/128755753-a8fc35d1-3f28-47b6-b4a3-c6b1a9115dde.png)
 
 **Only one event within five seconds**
 
@@ -41,7 +41,7 @@ ab-cd-ef-g--
 -a----b----c----d----e----f----
 ```
 
-![image](https://user-images.githubusercontent.com/836375/128753824-c10c7ce8-ecaf-462e-83af-72b1c8dcc91d.png)
+![rate-limit-five-tick](https://user-images.githubusercontent.com/836375/128755783-81846f03-3d23-4bfd-a4e8-7f4685e84cc5.png)
 
 ## Observables
 
