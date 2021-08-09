@@ -63,3 +63,11 @@ a----|
 ```
 
 ![post-delay](https://user-images.githubusercontent.com/836375/128756533-e76982b2-0e6c-417d-827f-06cb9cfe22ec.png)
+
+### `intervalBackoff(backoff: number): Observable<number>`
+
+Creates an Observable that emits sequential numbers in an exponentially increasing interval of time.
+
+**exponentially increasing delay starting at a one second interval**
+
+![image](https://user-images.githubusercontent.com/836375/128770468-d9bdb124-c794-45aa-b7d6-c3c1364591c8.png)
