@@ -53,3 +53,13 @@ closing the observable, like so:
 ```
 event--{ dueTime }--|
 ```
+
+**Delay 5 seconds after emitting an event**
+
+```
+> postDelay("a", 5000)
+
+a----|
+```
+
+![post-delay](https://user-images.githubusercontent.com/836375/128756533-e76982b2-0e6c-417d-827f-06cb9cfe22ec.png)

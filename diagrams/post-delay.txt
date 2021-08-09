@@ -1,0 +1,6 @@
+[styles]
+frame_width = 100
+
+> postDelay("a", 5000)
+
+a----|
