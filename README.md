@@ -29,7 +29,7 @@ abcdef--g-|
 ab-cd-ef-g--|
 ```
 
-![image](https://user-images.githubusercontent.com/836375/128750726-76d84850-3fdb-46b8-a4d6-4cb08de1f8d4.png)
+![image](https://user-images.githubusercontent.com/836375/128752990-58a17486-65ce-40af-8145-f0d05ac9ddb9.png)
 
 **Only one event within five ticks**
 
