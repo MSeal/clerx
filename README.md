@@ -1,6 +1,6 @@
 # clerx 💁
 
-RxJS Operators and Observables for the administrative busybodies inside us.
+A Timely Suite of RxJS Operators and Observables
 
 ## Install
 
