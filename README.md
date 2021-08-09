@@ -2,6 +2,12 @@
 
 RxJS Operators and Observables for the administrative busybodies inside us.
 
+## Install
+
+```
+npm install clerx
+```
+
 ## Operators
 
 ### `rateLimiter`
