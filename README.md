@@ -8,6 +8,8 @@ RxJS Operators and Observables for the administrative busybodies inside us.
 npm install clerx
 ```
 
+[Try out the example](https://stackblitz.com/edit/ugxk9f-c24puf?devtoolsheight=33&file=index.ts)
+
 ## Operators
 
 ### `rateLimiter`
