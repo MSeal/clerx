@@ -1,7 +1,7 @@
 % rate limit of two items within three seconds
 
-abcdef--g-|
+abcdef--g---
 
 > rateLimiter(2, 3000)
 
-ab-cd-ef-g--|
+ab-cd-ef-g--

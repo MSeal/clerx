@@ -22,14 +22,14 @@ stop deferring if the wait time goes past `timeoutDue`.
 **Only two events within three seconds**
 
 ```
-abcdef--g-|
+abcdef--g---
 
 > rateLimiter(2, 3000)
 
-ab-cd-ef-g--|
+ab-cd-ef-g--
 ```
 
-![image](https://user-images.githubusercontent.com/836375/128753802-0d51aba5-1657-49c8-85d7-07c8e5957af8.png)
+![image](https://user-images.githubusercontent.com/836375/128755519-03754982-7b25-4057-9ab6-4030ecace685.png)
 
 **Only one event within five seconds**
 
