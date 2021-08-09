@@ -1,0 +1,40 @@
+{
+  "name": "clerx",
+  "version": "1.0.0",
+  "description": "The Clerical Rx Suite",
+  "main": "build/main/index.js",
+  "scripts": {
+    "build": "npm run build:all",
+    "build:all": "npm run build:main && npm run build:module",
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.module.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgbkrk/clerx.git"
+  },
+  "keywords": [
+    "Rx",
+    "clerical",
+    "semaphore",
+    "postdelay",
+    "ratelimiter"
+  ],
+  "author": "Kyle Kelley",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/rgbkrk/clerx/issues"
+  },
+  "homepage": "https://github.com/rgbkrk/clerx#readme",
+  "dependencies": {
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.13",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  }
+}
