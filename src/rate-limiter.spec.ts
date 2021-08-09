@@ -35,6 +35,17 @@ describe("ratelimit tests", () => {
     });
   });
 
+  test("2 items in a 3 tick window with a later item", () => {
+    testScheduler.run((helpers) => {
+      const { cold, expectObservable } = helpers;
+
+      const eve = cold("abcdef-g-|");
+      const expected = "ab-cd-ef-g--|";
+
+      expectObservable(eve.pipe(rateLimiter(2, 3))).toBe(expected);
+    });
+  });
+
   test("1 item in a 5 tick window", () => {
     testScheduler.run((helpers) => {
       const { cold, expectObservable } = helpers;

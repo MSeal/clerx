@@ -1,0 +1,15 @@
+% two items in a 3 tick window
+
+%abcdef--g-|
+
+%> rateLimiter(2, 3)
+
+%ab-cd-ef-g--|
+
+% only one item allowed in a five tick window
+
+-(abc)def
+
+> rateLimiter(1, 5)
+
+-a----b----c----d----e----f----

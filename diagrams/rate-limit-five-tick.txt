@@ -1,0 +1,8 @@
+% rate limit
+% only one item allowed in a five tick window
+
+-(abc)def
+
+> rateLimiter(1, 5)
+
+-a----b----c----d----e----f----
