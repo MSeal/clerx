@@ -60,16 +60,20 @@ Similarly, this example limits events to one (`count`) event in a five second
 
 ## Observables
 
+As defined in the RxJS docs:
+
+>[Observables](https://rxjs.dev/guide/observable) are lazy Push collections of multiple values.
+
 ### `postDelay(event: T, dueTime): Observable<T>`
 
-Creates an observable that emits the `event` then waits `dueTime` before
+Creates an observable that emits the `event` then waits `dueTime` (milliseconds) before
 closing the observable, like so:
 
 ```
 event--{ dueTime }--|
 ```
 
-**Delay 5 seconds after emitting an event**
+**Example: Delay 5 seconds after emitting an event**
 
 ```
 > postDelay("a", 5000)
@@ -81,9 +85,11 @@ a----|
 
 ### `intervalBackoff(backoff: number): Observable<number>`
 
-Creates an Observable that emits sequential numbers in an exponentially increasing interval of time.
+Creates an Observable that emits sequential numbers in an exponentially increasing interval of time. `backoff` is the starting time interval, in milliseconds, and will exponentially increase with each event.
 
-**exponentially increase delay starting at a one second interval**
+**Example: Exponentially increase delay starting at a one second interval**
+
+The marble diagram illustrates the exponentially growing duration between events.
 
 ```
 > intervalBackoff(1000)
