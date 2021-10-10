@@ -12,14 +12,26 @@ npm install clerx
 
 ## Operators
 
+As defined in the RxJS docs:
+
+>[Operators](https://rxjs.dev/guide/operators) are the essential pieces that
+> allow complex asynchronous code to be easily composed in a declarative manner.
+> Operators are functions.
+
 ### `rateLimiter(count, slidingWindowTime)`
 
-Defer sending events if `count` events occur within `slidingWindowTime`. Optionally,
-stop deferring if the wait time goes past `timeoutDue`.
+Defer sending events if `count` events occur within `slidingWindowTime` (milliseconds). Optionally, stop deferring if the wait time goes past `timeoutDue`. Returns an Observable.
+
+
 
 #### Examples
 
-**Only two events within three seconds**
+**Only send two events within three seconds**
+
+In this example, only 2 (`count`) events are sent during a 3 second
+(3000 ms `slidingWindowTime`) sliding window.  As displayed in the marble
+diagram, additional events beyond 2 events in the sliding window will be
+deferred.
 
 ```
 abcdef--g---
@@ -32,6 +44,9 @@ ab-cd-ef-g--
 ![rate-limiter](https://user-images.githubusercontent.com/836375/128755753-a8fc35d1-3f28-47b6-b4a3-c6b1a9115dde.png)
 
 **Only one event within five seconds**
+
+Similarly, this example limits events to one (`count`) event in a five second
+(5000 ms `slidingWindowTime`) window. The marble diagram shows how the events are distributed over time.
 
 ```
 -(abc)def
