@@ -1,6 +1,6 @@
 {
   "name": "clerx",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The Clerical Rx Suite",
   "main": "build/main/index.js",
   "types": "build/main/index.d.ts",
